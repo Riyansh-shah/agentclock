@@ -1,0 +1,5 @@
+{
+  "name": "agentclock",
+  "owner": { "name": "Riyansh-shah" },
+  "plugins": [{ "name": "agentclock", "source": "./" }]
+}

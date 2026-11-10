@@ -1,0 +1,32 @@
+{
+  "name": "agentclock",
+  "version": "0.3.0",
+  "description": "See how much time you spend waiting on your AI coding agents: stats, a live status line across sessions, a permission-prompt audit, a weekly recap card, an optional nudge, and a guess-the-run game.",
+  "author": { "name": "Riyansh-shah", "url": "https://github.com/Riyansh-shah" },
+  "homepage": "https://github.com/Riyansh-shah/agentclock",
+  "repository": "https://github.com/Riyansh-shah/agentclock",
+  "license": "MIT",
+  "keywords": ["agents", "productivity", "stats", "codex"],
+  "userConfig": {
+    "nudge": {
+      "type": "boolean",
+      "title": "Nudge me when an agent waits on me",
+      "description": "One notification when an agent has been waiting on you (a permission prompt, or finished work) for longer than the minutes below, and you seem to be away. At most one per wait. Off by default.",
+      "default": false
+    },
+    "nudge_minutes": {
+      "type": "number",
+      "title": "Nudge after (minutes)",
+      "description": "How long an agent has to wait on you before the nudge.",
+      "default": 5,
+      "min": 1,
+      "max": 120
+    },
+    "ntfy_topic": {
+      "type": "string",
+      "title": "Phone nudges: ntfy topic (optional)",
+      "description": "To also get the nudge on your phone, install the free ntfy app, subscribe to a hard-to-guess topic name, and enter it here. Leave empty for desktop only. The message names the project folder.",
+      "default": ""
+    }
+  }
+}

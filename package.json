@@ -1,0 +1,33 @@
+{
+  "name": "agentclock",
+  "version": "0.3.0",
+  "description": "See how much time you spend waiting on your AI coding agents.",
+  "type": "module",
+  "bin": {
+    "agentclock": "cli/agentclock.js"
+  },
+  "files": [
+    "cli",
+    "src"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "claude-code",
+    "ai",
+    "agents",
+    "productivity",
+    "stats"
+  ],
+  "author": "Riyansh-shah",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riyansh-shah/agentclock.git"
+  },
+  "homepage": "https://github.com/Riyansh-shah/agentclock",
+  "license": "MIT"
+}
